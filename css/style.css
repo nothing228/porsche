@@ -13,6 +13,7 @@
 body {
   background: #141414;
   color: #f0f0f0;
+  min-height: 320px;
 }
 
 .header {
@@ -46,7 +47,7 @@ body {
 
 .banner {
   background: url(../img/bg.png) no-repeat center bottom / cover;
-  height: 748px;
+  height: 80svh;
 }
 
 .banner__wrap {
@@ -60,7 +61,7 @@ body {
 .banner__title {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 140px;
+  font-size: clamp(3.125rem, 0.93rem + 10.98vw, 8.75rem);
   color: #b31d1e;
 }
 
@@ -105,7 +106,7 @@ body {
 .car__left-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 40px;
+  font-size: clamp(1.563rem, 1.197rem + 1.83vw, 2.5rem);
   color: #eb3a13;
 }
 
@@ -114,6 +115,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   color: #f0f0f0;
+  word-break: break-all;
 }
 
 .car__right {
@@ -151,8 +153,8 @@ body {
   width: 100%;
 }
 
-.gallery__Bigimg {
-  flex: 0 0 100%;
+.gallery__Bigimg img {
+  width: 100%;
 }
 
 .gallery__Bigimg img {
@@ -250,9 +252,8 @@ body {
 }
 
 .footer__nav-list_item-link {
-  font-family: "Montserrat" , sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 14px;
-  color: #F0F0F0;
-
+  color: #f0f0f0;
 }
